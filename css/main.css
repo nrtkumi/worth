@@ -3,6 +3,7 @@ body {
   margin: 0;
   background-color: #2a3134;
   color: #fff;
+  font-family: 'Ribeye Marrow', cursive;
 }
 
 .top-img {
@@ -17,12 +18,16 @@ body {
 .container {
   padding: 0 50px;
   margin: 0 auto;
-  font-family: 'Ribeye Marrow', cursive;
 }
 
 .title {
   letter-spacing: 10px;
   font-size: 5em;
+  visibility: hidden;
+}
+
+.motto {
+  visibility: hidden;
 }
 
 .line {
@@ -34,9 +39,22 @@ body {
   margin-top: 150px;
   text-align: center;
 }
-
+/*
+#heading-one {
+  visibility: hidden;
+}
+*/
 .heading {
   font-size: 5em;
+  visibility: hidden;
+}
+
+.fa-hand-o-right {
+  margin-right: 30px;
+}
+
+#content {
+  visibility: hidden;
 }
 
 .content {
@@ -46,6 +64,7 @@ body {
 
 .member {
   margin-bottom: 250px;
+  visibility: hidden;
 }
 
 img {
@@ -68,4 +87,30 @@ img {
 
 .fa-facebook-official {
   color: #305097;
+  margin-right: 50px;
+}
+
+.fa-instagram {
+  color: #3f729b;
+}
+
+#msg {
+  visibility: hidden;
+}
+
+.btn {
+  margin: 0 auto;
+  width: 300px;
+  border: solid 5px #fff;
+  font-size: 2em;
+  margin-bottom: 200px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #2a3134;
+}
+
+.footer {
+  text-align: center;
 }
