@@ -36,7 +36,8 @@ body {
 }
 
 .content {
-  margin: 70px 0;
+  margin-top: 70px;
+  margin-bottom: 250px;
 }
 
 .member {
