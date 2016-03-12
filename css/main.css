@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ribeye+Marrow);
 body {
   margin: 0;
-  background-color: #2c344d;
+  background-color: #2a3134;
   color: #fff;
 }
 
@@ -27,12 +27,16 @@ body {
 
 .line {
   height: 20px;
-  background-color: #fff;
+  background-color: #cbcbcb;
 }
 
 .description {
   margin-top: 150px;
   text-align: center;
+}
+
+.heading {
+  font-size: 3em;
 }
 
 .content {
@@ -47,4 +51,21 @@ body {
 img {
   width: 200px;
   border-radius: 50%;
+}
+
+.sns {
+  font-size: 2em;
+}
+
+.fa {
+  text-decoration: none;
+}
+
+.fa-twitter {
+  color: #00aced;
+  margin-right: 50px;
+}
+
+.fa-facebook-official {
+  color: #305097;
 }
