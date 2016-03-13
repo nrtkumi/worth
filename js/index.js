@@ -102,6 +102,14 @@ $('#heading-three').bind('inview', function(event, isInView, visiblePartX, visib
 
   setTimeout(function(){
     $('#msg').css('visibility', 'visible');
-    $('#msg').addClass('lightSpeedIn');
+    $('#msg').addClass('bounceInUp');
+  },1000);
+});
+
+$('#btn').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  var title = $(this);
+
+  setTimeout(function(){
+    title.addClass('swing');
   },1000);
 });
