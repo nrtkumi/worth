@@ -91,6 +91,32 @@ $('#member-three').bind('inview', function(event, isInView, visiblePartX, visibl
   },1000);
 });
 
+$('#member-four').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  var title = $(this);
+
+  setTimeout(function(){
+    title.css('visibility', 'visible');
+    title.addClass('fadeInUp');
+  },1000);
+});
+
+$('#member-five').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  var title = $(this);
+
+  setTimeout(function(){
+    title.css('visibility', 'visible');
+    title.addClass('fadeInUp');
+  },1000);
+});
+
+$('#member-six').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
+  var title = $(this);
+
+  setTimeout(function(){
+    title.css('visibility', 'visible');
+    title.addClass('fadeInUp');
+  },1000);
+});
 
 $('#heading-three').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
   var title = $(this);
