@@ -6,6 +6,45 @@ body {
   font-family: 'Ribeye Marrow', cursive;
 }
 
+.wrap {
+  position: fixed;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.menu {
+  opacity: 0.8;
+  background-color: #545a5c;
+}
+
+.menu ul {    
+  margin-left : auto;
+  margin-right : auto;
+  list-style-type : none;     
+  width : 1000px;
+  overflow : hidden;
+  margin-top : 0px;
+  margin-bottom : 0px;
+  padding-top : 0px;
+  padding-left : 0px;
+  padding-right : 0px;
+  padding-bottom : 0px;
+  font-size: 30px;
+}
+
+.menu li:hover {
+  background-color: #7f8385
+}
+
+.menu li {
+  font-weight : bold;
+  text-align : center;
+  width : 250px;
+  float : left;
+}
+
 .top-img {
   width: 100%;
   height: 450px;
