@@ -113,3 +113,19 @@ $('#btn').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
     title.addClass('swing');
   },1000);
 });
+
+$('#menuTop').click(function() {
+  $('.top-img').animatescroll({scrollSpeed:2000,easing:'easeOutCirc'});
+});
+
+$('#menuAbout').click(function() {
+  $('.aboutTop').animatescroll({scrollSpeed:2000,easing:'easeOutBack'});
+});
+
+$('#menuMember').click(function() {
+  $('.memberTop').animatescroll({scrollSpeed:2000, easing:'easeOutBack'});
+});
+
+$('#menuMessage').click(function() {
+  $('.messageTop').animatescroll({scrollSpeed:2000,easing:'easeOutCirc'});
+});
