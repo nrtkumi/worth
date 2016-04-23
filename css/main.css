@@ -1,9 +1,57 @@
 @import url(https://fonts.googleapis.com/css?family=Ribeye+Marrow);
 body {
   margin: 0;
-  background-color: #2a3134;
-  color: #fff;
+  background-color: white;
+  color: black;
   font-family: 'Ribeye Marrow', cursive;
+}
+
+.menu {
+  background-color: white;
+  height: 4.5em;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  opacity: 1;
+  margin: 0;
+  box-shadow: 3px 3px 20px rgba(0,0,0,0.3);
+}
+
+.top{
+  font-family: 'Poiret One',cursive;
+  letter-spacing: 2px;
+  font-size: 2em;
+  float: left;
+  padding: 0.5em;
+  margin: 0;
+}
+
+.menu-contents li {
+  float: left;
+  font-size: 1.5em;
+  margin-right: 1.5em;
+}
+
+.menu h1:hover {
+  cursor: pointer;
+}
+
+.menu-contents li:hover {
+  color: #009cff;
+  cursor: pointer;
+}
+
+.menu-contents {
+	position: absolute;
+	right: 0;
+	list-style: none;
+	/*color: #CCC7C7;*/
+	font-family: 'hosofont';
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 1em;
+	padding-top: 1em;
+	transition: all .4s;
 }
 
 .top-img {
@@ -13,6 +61,7 @@ body {
   background-image: url("../images/top.jpg");
   background-size: cover;
   text-align: center;
+  color: white;
 }
 
 .container {
@@ -32,7 +81,7 @@ body {
 
 .line {
   height: 20px;
-  background-color: #cbcbcb;
+  background-color: 	#e7f9fe;
 }
 
 .description {
@@ -59,7 +108,8 @@ body {
 }
 
 .member {
-  margin-bottom: 250px;
+  /*margin-bottom: 250px;*/
+  margin-bottom: 100px;
   visibility: hidden;
 }
 
@@ -97,15 +147,16 @@ img {
 .btn {
   margin: 0 auto;
   width: 300px;
-  color: #fff;
-  border: solid 5px #fff;
+  color: #000;
+  border: solid 5px #000;
   font-size: 2em;
   margin-bottom: 200px;
 }
 
 .btn:hover {
-  background-color: #fff;
-  color: #2a3134;
+  background-color: #009cff;
+  color: #fff;
+  border: solid 5px #009cff;
 }
 
 .footer {
@@ -117,9 +168,13 @@ a {
 }
 
 .contact {
-  color: #fff;
+  color: #000;
 }
 
 .contact:hover {
-  color: #2a3134;
+  color: #fff;
+}
+
+#heading-one, #heading-two, #heading-three {
+  color:#009cff;
 }
