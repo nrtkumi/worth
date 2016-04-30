@@ -161,6 +161,6 @@ $('#menuMember').click(function() {
   $('.memberTop').animatescroll({scrollSpeed:2000, easing:'easeOutBack'});
 });
 
-$('#menuMessage').click(function() {
-  $('.messageTop').animatescroll({scrollSpeed:2000,easing:'easeOutCirc'});
+$('#menuContact').click(function() {
+  $('.contactTop').animatescroll({scrollSpeed:2000,easing:'easeOutCirc'});
 });
