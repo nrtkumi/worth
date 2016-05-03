@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Ribeye+Marrow);
+html {
+  height: 100%;
+}
 body {
   margin: 0;
   background-color: white;
   color: black;
   font-family: 'Ribeye Marrow', cursive;
+  height: 100%;
 }
 
 .menu {
@@ -19,16 +23,8 @@ body {
 .top{
   font-family: 'Poiret One',cursive;
   letter-spacing: 2px;
-  font-size: 2em;
   float: left;
-  padding: 0.5em;
   margin: 0;
-}
-
-.menu-contents li {
-  float: left;
-  font-size: 1.5em;
-  margin-right: 1.5em;
 }
 
 .menu h1:hover {
@@ -40,42 +36,30 @@ body {
   cursor: pointer;
 }
 
-.menu-contents {
-	position: absolute;
-	right: 0;
-	list-style: none;
-	/*color: #CCC7C7;*/
-	font-family: 'hosofont';
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-right: 1em;
-	padding-top: 1em;
-	transition: all .4s;
+.menu i {
+  position: absolute;
+  right: 0;
+  font-size:2em;
+  padding:0.5em;
 }
 
-@media screen and (max-width: 500px) {
-  .menu {
-    height: 7em;
-  }
-  .menu-contents {
-    display: none;
-  }
+.fa-times {
+  position: absolute;
+  right: 0;
+  font-size: 2em;
+  padding: 0.5em;
 }
-
-@media screen and (min-width: 501px) {
-  .menu {
-    height: 4.5em;
-  }
 
 .top-img {
   width: 100%;
-  min-height: 400px;
+  min-height: 100%;
   height: 100%;
-  padding: 200px 0;
+  padding: 150px 0 50px 0;
   background-image: url("../images/top.jpg");
   background-size: cover;
   text-align: center;
   color: white;
+  overflow: hidden;
 }
 
 .container {
@@ -84,8 +68,6 @@ body {
 }
 
 .title {
-  letter-spacing: 10px;
-  font-size: 5em;
   visibility: hidden;
 }
 
@@ -104,8 +86,8 @@ body {
 }
 
 .heading {
-  font-size: 5em;
   visibility: hidden;
+  color:#009cff;
 }
 
 .fa-hand-o-right {
@@ -118,11 +100,9 @@ body {
 
 .content {
   margin-top: 70px;
-  margin-bottom: 250px;
 }
 
 .member {
-  /*margin-bottom: 250px;*/
   margin-bottom: 100px;
   visibility: hidden;
 }
@@ -160,7 +140,6 @@ img {
 
 .btn {
   margin: 0 auto;
-  width: 300px;
   color: #000;
   border: solid 5px #000;
   font-size: 2em;
@@ -189,6 +168,99 @@ a {
   color: #fff;
 }
 
-#heading-one, #heading-two, #heading-three {
-  color:#009cff;
+/*PC*/
+@media screen and (min-width: 768px) {
+  .top {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+  .menu {
+    height: 4.5em;
+  }
+  .menu-contents {
+  	position: absolute;
+  	right: 0;
+  	list-style: none;
+  	/*color: #CCC7C7;*/
+  	font-family: 'hosofont';
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+  	padding-top: 1em;
+  	transition: all .4s;
+  }
+  .menu-contents li {
+    float: left;
+    font-size: 1.5em;
+    margin-right: 1.5em;
+  }
+  .menu i {
+    display: none;
+  }
+  .mb-menu {
+    display: none;
+  }
+  .title {
+    font-size: 5em;
+    letter-spacing: 10px;
+  }
+  .heading {
+    font-size: 5em;
+  }
+  .cotent {
+    margin-bottom: 250px;
+  }
+  .btn {
+    width: 300px;
+  }
+}
+
+/*スマホ*/
+@media screen and (max-width: 767px) {
+  .top {
+    font-size: 2em;
+    padding: 0.5em;
+  }
+  .menu {
+    height: 4em;
+  }
+  .menu-contents {
+    display: none;
+  }
+  .mb-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background-color: #5bcaff;
+    opacity: 0.95;
+    font-family: 'Poiret One',cursive;
+    font-size: 2em;
+    color: white;
+    display: none;
+  }
+  .mb-menu-contents {
+    margin-top: 5em;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+  }
+  .mb-menu-contents li {
+    margin-bottom: 1em;
+  }
+  .title {
+    font-size: 3em;
+    letter-spacing: 5px;
+    text-align: center;
+  }
+  .heading {
+    font-size: 3em;
+  }
+  .content {
+    margin-bottom: 100px;
+  }
+  .btn {
+    width: 200px;
+  }
 }
